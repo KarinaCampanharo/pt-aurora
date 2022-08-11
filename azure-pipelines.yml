@@ -24,7 +24,6 @@ steps:
 
 - script: 'botium-cli run'
   displayName: 'Command Line Script'
-  workingDirectory: spec/convo
 
 - task: PublishTestResults@2
   displayName: 'Publish Test Results **/TEST-*.xml'

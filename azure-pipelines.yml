@@ -13,10 +13,10 @@ steps:
 - script: 'sudo apt update'
   displayName: 'update'
 
-- script: 'sudo apt-get install node'
+- script: 'sudo apt install nodejs'
   displayName: 'install node'
 
-- script: 'sudo apt-get install npm'
+- script: 'sudo apt install npm'
   displayName: 'install npm'
 
 - script: 'npm install -g botium-cli'

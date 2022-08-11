@@ -24,8 +24,7 @@ steps:
 
 - script: 'botium-cli run'
   displayName: 'Command Line Script'
-  workingDirectory: aurora-pt\botium-connector-directline3\samples\convo\spec\convo
-
+  workingDirectory: #
 - task: PublishTestResults@2
   displayName: 'Publish Test Results **/TEST-*.xml'
   

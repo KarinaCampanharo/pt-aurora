@@ -13,13 +13,19 @@ steps:
 - script: 'sudo apt update'
   displayName: 'update'
 
+- script: 'sudo apt-get install node'
+  displayName: 'install node'
+
+- script: 'sudo apt-get install npm'
+  displayName: 'install npm'
+
 - script: 'npm install -g botium-cli'
   displayName: 'Command Line Script'
 
 - script: 'botium-cli run'
   displayName: 'Command Line Script'
+  workingDirectory: spec/convo
 
 - task: PublishTestResults@2
   displayName: 'Publish Test Results **/TEST-*.xml'
 
-parameters:$convo
